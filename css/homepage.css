@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+html {
+    background-image: url(/images/Background.jpg);
+    height: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .75em;
+}
+body {
+    max-width: 800px;
+    padding: .75em .75em;
+    margin: 5em auto;
+    background-color: white;
+    border-radius: 5px;
+}
+header, footer {
+    background-color: #4192D9;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+}
+header {
+    font-family: 'Yusei Magic', sans-serif;
+}
+header h1 {
+    color: black;
+    display: inline;
+    font-size: 3em;
+}
+footer p{
+    display: inline;
+}
+img {
+    max-width: 12em;
+    float: right;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+main {
+    padding-left: 1em;
+    font-family: 'Courier New', monospace;
+}
+ul {
+    list-style: none;
+}
+li {
+    padding: .2em;
+}
+a:link {
+    color: black;
+}
+#year {
+    display: inline;
+}
+#lastModifiedDate {
+    color: #E7F518;
+}
+@media screen and (max-width: 550px){ 
+    header h1 {
+        display: block;
+    }
+    img {
+        float: none;
+    }
+}

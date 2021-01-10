@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 230 Home Page - Alexander Lynn</title>
+    <meta name="description" content="This is the assignment portal and home page for Alexander Lynn 
+    in WDD 230: Web Frontend Development Brigham Young University -Idaho">
+
+    <link href="css/homepage.css" rel="stylesheet">
 </head>
-<body>
-    
+<body onload="getLastModified()">
+    <header>
+        <img src="images/AlexanderLynn.jpg" alt="Profile photo of Alexander Lynn">
+        <h1>Alexander Lynn</h1>
+    </header>
+
+
+    <main>
+        <h2>WDD 230: Assignment Portal</h2>
+        <hr>
+        <ul>
+            <li>Lesson 1: <a href="#">Link to Assignment</a></li>
+            <li>Lesson 2: <a href="#">Link to Assignment</a></li>
+            <li>Lesson 3: <a href="#">Link to Assignment</a></li>
+        </ul>
+    </main>
+
+
+    <footer>
+        <p>&copy <div id="year"></div> | Alexander Joshua Lynn | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a> </p>
+        <br>
+        <p id="lastModifiedDate"></p>
+        <script src="js/time.js"></script>
+    </footer>
 </body>
 </html>
