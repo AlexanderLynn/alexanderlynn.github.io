@@ -56,9 +56,6 @@ a:link {
 #year {
     display: inline;
 }
-#lastModifiedDate {
-    color: #F8F8BF;
-}
 @media screen and (max-width: 550px){ 
     header h1 {
         display: block;
