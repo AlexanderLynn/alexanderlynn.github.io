@@ -57,7 +57,7 @@ a:link {
     display: inline;
 }
 #lastModifiedDate {
-    color: #E7F518;
+    color: #F8F8BF;
 }
 @media screen and (max-width: 550px){ 
     header h1 {
