@@ -52,7 +52,6 @@ img {
     max-width: 14em;
     border: 4px solid #4192D9;
     border-radius: 1em;
-    overflow: hidden;
     display: flex;
     margin: auto;
 }
