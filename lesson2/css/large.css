@@ -3,10 +3,9 @@
         display: grid;
         grid-template-columns: repeat(3 1fr);
         grid-gap: 2em;
-        justify-items: center;
     }
     img {
-        margin-right: 3em;
+        margin: auto;
     }
     #whitespace {
         grid-column: 1/2;
