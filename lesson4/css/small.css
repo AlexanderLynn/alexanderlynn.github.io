@@ -55,13 +55,14 @@ img {
     height: 200px;
 }
 main {
-    margin: auto;
-    display: inline-block;
+    padding: 1rem;
 }
 main h2 {
     border: solid #F69A19;
-    max-width: 80%;
+    max-width: 40rem;
     text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
 }
 footer {
     background-color: #054BA6;
