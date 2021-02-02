@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:wght@300&display=swap');
+
+h1, h2 {
+    font-family: 'Architects Daughter', cursive;
+}
+p, div {
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+nav button {
+    background-color: #054BA6;
+    color: #F2F2F2;
+    border: none;
+    font-size: 2.5rem;
+}
+nav {
+    background-color: #054BA6;
+    text-align: right;
+}
+nav {
+    display: block;
+    padding: 0;
+    justify-items: space-evenly;
+    align-items: center;
+}
+nav ul { 
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+nav ul li.active a{
+    font-style: italic;
+    font-size: 1.4rem;
+}
+nav ul li a:hover {
+    background-color: #00163F;
+}
+nav ul.hide {
+    display: none;
+}
+img {
+    max-width: 10rem;
+}
+main {
+    max-width: 60rem;
+}
+main h2 {
+    border: solid #F69A19;
+    max-width: 80%;
+    text-align: center;
+}
+footer {
+    background-color: #054BA6;
+    max-width: 60rem;
+    margin: 1rem auto;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
