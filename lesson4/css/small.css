@@ -51,7 +51,7 @@ nav ul.hide {
     display: none;
 }
 img {
-    max-width: 10rem;
+    height: 200px;
 }
 main {
     margin: auto;
