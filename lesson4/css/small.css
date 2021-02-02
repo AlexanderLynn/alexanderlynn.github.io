@@ -54,7 +54,8 @@ img {
     max-width: 10rem;
 }
 main {
-    max-width: 60rem;
+    margin: auto;
+    display: inline-block;
 }
 main h2 {
     border: solid #F69A19;
