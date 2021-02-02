@@ -9,6 +9,7 @@ p, div {
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 nav button {
     background-color: #054BA6;
