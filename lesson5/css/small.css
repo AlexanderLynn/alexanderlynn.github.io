@@ -29,6 +29,7 @@ nav {
 }
 nav ul { 
     padding: 0;
+    margin: 0;
 }
 nav ul li {
     list-style: none;
@@ -68,6 +69,10 @@ footer {
     text-align: center;
     color: white;
     padding: 1rem;
+}
+footer a {
+    text-align: center;
+    color: white;
 }
 /* Banner CSS */
 header p {
