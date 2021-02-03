@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/lesson5/images/weather_logo_icons/weather_logo_Tbv_1.ico" type="image/x-icon">
+</head>
+<body onload="getTime()">
+    <header>
+        <p id="banner"></p>
+        <div>
+        <img src="/lesson5/images/weather-logo.png" alt="Weather Logo">
+        <section>
+        <h1>Lynn Forecast</h1>
+        <h2>Weather right!</h2>
+        </section>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="menu" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Hero Image w/ Weather Summary</h2>
+        <h2>5 Day Forecast</h2>
+        <h2>Article</h2>
+        <h2>Contact Information</h2>
+    </main>
+    <footer>
+        <div>&copy; The Weather Site | Attributions | Alexander Joshua Lynn</div>
+        <p id="time"></p>
+        <script src="/lesson5/js/siteScripts.js"></script>
+    </footer>
+</body>
+</html>
