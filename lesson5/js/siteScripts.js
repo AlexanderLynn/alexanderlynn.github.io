@@ -8,7 +8,7 @@ function getTime() {
 }
 //Banner Code. This way you can set whatever value you want in the JS.
 window.addEventListener('load', (event) => {
-    if (new Date().getDay() == 6)
+    if (new Date().getDay() == 5)
     {
         document.getElementById("banner").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
     }

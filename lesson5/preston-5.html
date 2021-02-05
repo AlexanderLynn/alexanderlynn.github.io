@@ -33,12 +33,66 @@
         </ul>
     </nav>
     <main>
-        <h2>Hero Image w/ Weather Summary</h2>
+        <div id="hero-div">
+            <img id="hero-mobile" src="images/hero-mobile.jpg" alt="hero image of mountains">
+            <img id="hero-medium" src="images/hero-medium.jpg" alt="hero image of mountains">
+            <section id="stats">
+                <h2>Weather Summary</h2>
+                <hr>
+                <h3>Currently: <div>Sunny</div></h3>
+                <h3>High: <div>64 &#176;F</div></h3>
+                <h3>Wind Chill: <div>62 &#176;F</div></h3>
+                <h3>Wind Speed: <div>6MPH</div></h3>
+                <h3>Humidity: <div>45%</div></h3>
+            </section>
+        </div>
         <h2>5 Day Forecast</h2>
+        <table class="five-day">
+            <tr>
+                <th>Wed</th>
+                <th>Thurs</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <td>☀️<br>64&#176;</td>
+                <td>☀️<br>65&#176;</td>
+                <td>☀️<br>66&#176;</td>
+                <td>☀️<br>62&#176;</td>
+                <td>☀️<br>53&#176;</td>
+            </tr>
+        </table>
+        <article>
         <h2>Article</h2>
-        <h2>Contact Information</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices, mauris sit amet pulvinar 
+            rhoncus, justo magna congue erat, vitae mollis leo urna et ipsum. Sed quis posuere justo. Donec vitae 
+            malesuada ipsum. Sed sagittis orci eget egestas pretium. Morbi nec enim eget nisl pretium eleifend 
+            vel sit amet lacus. Proin mi nibh, placerat eu facilisis porta, feugiat non quam. Mauris rutrum 
+            dapibus quam. Donec hendrerit metus sed eros bibendum, a pellentesque lorem congue. Nullam non 
+            orci augue. Duis orci diam, facilisis ac sapien vitae, consequat rutrum turpis. In auctor mauris 
+            vel erat commodo feugiat. Proin posuere tellus a ex condimentum, nec convallis odio dictum.<br><br>
+            Praesent volutpat pulvinar pharetra. Nullam sed purus sit amet mauris semper sagittis quis quis 
+            magna. Fusce ultrices porta dui, ac porttitor libero semper nec. In dapibus dolor nec ultrices 
+            luctus. Maecenas placerat nec velit ac efficitur. Maecenas vulputate vehicula nunc id tristique. 
+            Sed mattis vitae felis id accumsan. Donec faucibus consequat leo nec dapibus. Cras et ante ullamcorper, 
+            porttitor metus eget, malesuada turpis. Ut laoreet ipsum nisi, et euismod ante lobortis eget. Nunc 
+            vitae leo sit amet eros finibus porttitor. Sed sit amet sem sit amet neque aliquam pulvinar nec vitae 
+            lorem. Integer ultricies aliquam mauris, in rhoncus nulla efficitur at. Aliquam eleifend diam sed leo 
+            auctor vehicula. Vivamus sit amet leo orci. Aliquam erat volutpat.</p>
+            <img id="article-image" src="images/article-image.jpg" alt="image of hiker">
+        </article>
     </main>
     <footer>
+        <div id="contact">
+            <h2>Contact Information</h2>
+            <h4>📧 Contact@LynnWeather.com</h4>
+            <h4>📞 (801)234-9876</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23682.885435506072!2d-111.89783455662375
+                !3d42.099745619121826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2s
+                Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612549446967!5m2!1sen!2sus" width="600" height="450" frameborder="0" 
+                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         <div>&copy; The Weather Site | Attributions | Alexander Joshua Lynn</div>
         <p id="time"></p><br>
         <a href="/index.html">Course Work Homepage</a>

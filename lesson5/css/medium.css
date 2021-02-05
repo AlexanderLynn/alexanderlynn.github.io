@@ -1,3 +1,13 @@
 @media only screen and (min-width: 35rem) {
-
+    nav {
+        margin: 0 auto;
+    }
+    #hero-mobile {
+        display: none;
+    }
+    #hero-medium {
+        max-width: 100%;
+        margin: 0;
+        display: block;
+    }
 }
