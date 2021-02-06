@@ -6,6 +6,9 @@ h1, h2 {
 p, div, table {
     font-family: 'Raleway', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 /* Header CSS */
 header img {
     height: 200px;
@@ -116,17 +119,24 @@ table, th, td {
     text-align: center;
 }
 article {
-    padding: 1rem;
+    padding: 2rem;
+    text-align: center;
 }
-#article-image {
-    max-width: 100%
-}
-#contact h4, h2 {
+article p {
     text-align: left;
 }
-#contact iframe {
+#article-image {
     max-width: 100%;
+}
+#contact {
+    text-align: center;
+}
+#contact iframe {
+    max-width: 80%;
     padding-bottom: 1rem;
     padding-top: 1rem;
     margin: 0 auto;
+}
+#contact section div a {
+    display: none;
 }

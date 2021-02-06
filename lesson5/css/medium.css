@@ -10,4 +10,10 @@
         margin: 0;
         display: block;
     }
+    article {
+        text-align: center;
+    }
+    #article-image {
+        max-width: 70%;
+    }
 }
