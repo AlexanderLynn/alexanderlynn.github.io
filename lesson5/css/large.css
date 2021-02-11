@@ -30,15 +30,26 @@
     }
     #hero-div {
         position: relative;
-        max-width: 80%;
+        max-width: 1915px;
         margin: 0 auto;
     }
-
+    #hero-medium {
+        margin: 0 auto;
+    }
+    table {
+        max-width: 70rem;
+    }
+    table td {
+        font-size: 2rem;
+    }
     #stats {
         background-color: rgba( 5, 75, 166, .6);
         position: absolute;
         bottom: 0;
-        left: 100px;
+        left: 10%;
+    }
+    #stats div {
+        font-size: 1.5rem;
     }
     #article-image {
         max-width: 30%;

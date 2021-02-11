@@ -102,9 +102,12 @@ main h2 {
 #stats hr {
     color: white;
 }
-#stats h3 div {
+#stats h3 {
     display: inline;
-    color: #F69A19
+}
+#stats div {
+    color: #F69A19;
+    display: inline;
 }
 table, th, td {
     table-layout: fixed;
