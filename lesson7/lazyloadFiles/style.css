@@ -8,8 +8,9 @@ img {
     border: 1px black solid;
     margin: 1rem;    
     border-radius: 10px;
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
 [data-src] {
-    filter: blur(.15em);
-    transition: filter 0.5s;
+    filter: blur(.5em);
 }
