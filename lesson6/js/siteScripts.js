@@ -23,6 +23,11 @@ window.addEventListener('load', (event) => {
         document.getElementById("banner").style.display = "none";
 });
 
+window.addEventListener('load', (event) => {
+    WebFont.load({ google: {families: ['Architects Daughter', 'Raleway']}});
+});
+
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("hide");
 }
+
