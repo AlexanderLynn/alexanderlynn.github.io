@@ -1,4 +1,4 @@
-let imagesToLoad = document.querySelectorAll("img[data-src]");
+let imagesToLoad = document.querySelectorAll("[data-src]");
 
 let imgOptions = {
     threshold: 0, rootMargin: "0px 0px 100px 0px"

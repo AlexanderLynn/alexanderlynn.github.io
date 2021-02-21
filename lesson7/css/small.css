@@ -1,6 +1,6 @@
 /*Font CSS */
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:wght@300&display=swap');
-h1, h2, a{
+/* @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:wght@300&display=swap'); */
+h1, h2,a  {
     font-family: 'Architects Daughter', cursive;
 }
 p, div, table {
@@ -76,13 +76,10 @@ header p {
     color: white;
     font-size: 2rem;
 }
-/* Main CSS */
-#hero-mobile {
+/* Preston Main CSS */
+#hero-image {
     max-width: 100%;
-    margin: 0;
-}
-#hero-medium {
-    display: none;
+    margin: 0 auto;
 }
 main h2 {
     max-width: 40rem;
@@ -142,4 +139,24 @@ article p {
 }
 #contact section div a {
     display: none;
+}
+
+/* Gallery CSS */
+#gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 420px);
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+#gallery-grid img {
+    border: 1px black solid;   
+    border-radius: 3px;
+    filter: blur(0em);
+    transition: filter 1s;
+    max-width: 90vw;
+}
+#gallery-grid img[data-src] {
+    filter: blur(.5em);
 }
