@@ -68,6 +68,9 @@
         justify-content: space-evenly;
         padding: 2rem;
     }
+    #contact img {
+        max-width: 400px;
+    }
     #contact section div a {
         display: inline;
         padding: .25rem;
