@@ -67,15 +67,6 @@ footer a {
     text-align: center;
     color: white;
 }
-/* Banner CSS */
-header p {
-    background-color: #F69A19;
-    padding: 1rem;
-    margin: 0;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-}
 /* Preston Main CSS */
 #hero-image {
     max-width: 100%;
