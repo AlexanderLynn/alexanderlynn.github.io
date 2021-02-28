@@ -16,4 +16,9 @@
     #article-image {
         max-width: 70%;
     }
+    #thankMessage {
+        text-align: center;
+        padding: 5rem;
+        font-size: 3rem;
+    }
 }
