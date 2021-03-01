@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    color: #1A237E;
+}
+main div {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    grid-gap: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+section {
+    background-color: #9FA8DA;
+    padding: 2rem;
+}
+h2 {
+    margin-top: -1rem;
+    color: #1A237E;
+}
+p {
+    display: flex;
+    flex-flow: column;
+}
+span {
+    padding: .25rem;
+}
+@media only screen and (min-width: 46rem) {
+    main div { grid-template-columns: repeat(2, 350px); }
+}
+@media only screen and (min-width: 92rem) {
+    main div { grid-template-columns: repeat(4, 350px); }
+}
