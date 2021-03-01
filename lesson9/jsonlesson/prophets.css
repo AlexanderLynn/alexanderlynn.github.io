@@ -25,7 +25,7 @@ span {
     padding: .25rem;
 }
 img {
-    max-width: 290px;
+    max-width: 100%;
 }
 @media only screen and (min-width: 46rem) {
     main div { grid-template-columns: repeat(2, 350px); }
