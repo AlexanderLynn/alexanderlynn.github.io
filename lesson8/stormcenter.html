@@ -37,20 +37,20 @@
             <!-- Field 1 -->
             <fieldset>
                 <legend>Contact Info</legend>
-                <label>Full Name (required)<input type="text" name="name" pattern="[A-Za-z0-9 ]{5,}" title="minimum 5 letters" placeholder="John Doe" required></label>
+                <label>Full Name (required)<input type="text" name="name" pattern="[A-Za-z ]{5,}" title="minimum 5 letters" placeholder="John Doe" required></label>
                 <label>Email Address<input type="email" name="email" placeholder="lynnforecast@mail.com"></label>
                 <label>Phone Number (required)<input type="tel" name="phone" placeholder="1(877)434-4323" required></label>
-                <label>Zip Code (required)<input type="number" name="zipCode" pattern="{5,}" title="minimum 5 digits" placeholder="86647" required></label>
+                <label>Zip Code (required)<input type="number" name="zipCode" title="minimum 5 digits" placeholder="86647" required></label>
             </fieldset>
             <!-- Field 2 -->
             <fieldset>
                 <legend>Storm Report info</legend>
                 <label>Storm Date<input type="date" name="date"></label>
-                <label>Storm Type
-                    <input name="stormType" type="select" list="weatherType" placeholder="Please Describe Storm">
+                <label>Describe Storm Type
+                    <input name="stormType" list="weatherType">
                 </label>
                 <datalist id="weatherType">
-                    <option value="Flash Flood">
+                    <option value="Flash Flood">Flash Flood</option>
                     <option value="Hail">
                     <option value="Hurricane">
                     <option value="Thunderstorm">
@@ -91,7 +91,7 @@
             <!-- Field 3 -->
             <fieldset>
                 <legend>Additional Info & Send Report</legend>
-                <label>Any Other Pressing Info?<input type="textarea"></label>
+                <label>Any Other Pressing Info?<br><textarea></textarea></label>
                 <input type="submit" value="Send My Weather Report" id="submitButton">
             </fieldset>
         </form>
