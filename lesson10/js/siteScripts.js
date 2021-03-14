@@ -21,7 +21,7 @@ function toggleMenu() {
 }
 
 //Current Forecast (Weather API)
-const apiURLCurrent = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=5365d734eac5ba605c1bf24c08670adf&units=imperial";
+const apiURLCurrent = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=5365d734eac5ba605c1bf24c08670adf&units=imperial";
 
 fetch(apiURLCurrent)
   .then((response) => response.json())
@@ -40,7 +40,7 @@ fetch(apiURLCurrent)
 });
 
 //5 Day Forecast (Weather API)
-const apiURLFiveDay =  "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=5365d734eac5ba605c1bf24c08670adf&units=imperial";
+const apiURLFiveDay =  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=5365d734eac5ba605c1bf24c08670adf&units=imperial";
 
 fetch(apiURLFiveDay)
   .then((response) => response.json())
