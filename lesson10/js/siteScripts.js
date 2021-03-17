@@ -1,5 +1,5 @@
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 function getTime() {
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     document.getElementById("time").innerHTML = days[new Date().getDay()] + ",";
     document.getElementById("time").innerHTML += " " + new Date().getDate();
@@ -18,6 +18,13 @@ window.addEventListener('load', (event) => {
 
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("hide");
+}
+
+//Set days in 5-day forecast
+let dayInForecast = document.getElementById("forecastDays").children;
+for (i = 0; i < 5; i++) {
+    dayInForecast[i].textContent = days[new Date().getDay() + i];
+    console.log(dayInForecast[i]);
 }
 
 //Current Forecast (Weather API)
