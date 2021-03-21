@@ -143,3 +143,10 @@ article p {
 #contact section div a {
     display: none;
 }
+
+#events {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    text-align: center;
+}

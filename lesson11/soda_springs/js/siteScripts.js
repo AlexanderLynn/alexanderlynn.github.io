@@ -73,3 +73,26 @@ fetch(apiURLFiveDay)
         }
     }
 });
+
+//JSON Import
+fetch("town.json")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    //Content Population loop from JSON
+    const towns = jsonObject['towns'];
+    for (let i = 0; i < towns.length; i++) {
+        //Important selected data only
+        if (towns[i].name == "Soda Springs") {
+            for (x = 0; x < towns[i].events.length; x++){
+            //Creating html elements
+            let section = document.createElement("p");
+            //Fill elements
+            section.textContent = towns[i].events[x];
+            //Append section to page
+            document.getElementById("events").appendChild(section);
+            }
+        }
+    }
+  });
