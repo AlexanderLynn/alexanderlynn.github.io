@@ -28,26 +28,26 @@ for (i = 0; i < 5; i++) {
 }
 
 //Current Forecast (Weather API)
-const apiURLCurrent = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=5365d734eac5ba605c1bf24c08670adf&units=imperial";
+const apiURLCurrent = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=5365d734eac5ba605c1bf24c08670adf&units=imperial";
 
 fetch(apiURLCurrent)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    document.getElementById('current-temp').textContent = jsObject.main.temp + " \xB0F";
-    document.getElementById('max-temp').textContent = jsObject.main.temp_max + " \xB0F";
-    document.getElementById('humidity').textContent = jsObject.main.humidity + "%";
-    document.getElementById('speed').textContent = jsObject.wind.speed.toFixed(1) + " MPH";
+    document.getElementById('current-temp').textContent = jsObject.main.temp.toFixed(0) + " \xB0F";
+    document.getElementById('max-temp').textContent = jsObject.main.temp_max.toFixed(0) + " \xB0F";
+    document.getElementById('humidity').textContent = jsObject.main.humidity.toFixed(0) + "%";
+    document.getElementById('speed').textContent = jsObject.wind.speed.toFixed(0) + " MPH";
 
     //Wind Chill Code
     let temp = parseFloat(jsObject.main.temp);
     let speed = parseFloat(jsObject.wind.speed);
     let chill = 35.74 + 0.6215 * temp - 35.75 * (Math.pow(speed, 0.16)) + 0.4275 * temp * (Math.pow(speed, 0.16));
-    document.getElementById("chill").textContent = chill.toFixed(1) + " \xB0F";
+    document.getElementById("chill").textContent = chill.toFixed(0) + " \xB0F";
 });
 
 //5 Day Forecast (Weather API)
-const apiURLFiveDay =  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=5365d734eac5ba605c1bf24c08670adf&units=imperial";
+const apiURLFiveDay =  "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=5365d734eac5ba605c1bf24c08670adf&units=imperial";
 
 fetch(apiURLFiveDay)
   .then((response) => response.json())
@@ -65,7 +65,7 @@ fetch(apiURLFiveDay)
             let imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
             let desc = jsObject.list[i].weather[0].description;
             let img = document.createElement("img");
-            forecastList[day].textContent = jsObject.list[i].main.temp.toFixed(1) + "  \xB0F";
+            forecastList[day].textContent = jsObject.list[i].main.temp.toFixed(0) + "  \xB0F";
             forecastList[day].appendChild(img);
             img.setAttribute('src', imagesrc);
             img.setAttribute('alt', desc); 

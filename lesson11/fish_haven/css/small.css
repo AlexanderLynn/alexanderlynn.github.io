@@ -67,6 +67,9 @@ footer a {
     text-align: center;
     color: white;
 }
+#map {
+    max-width: 100%
+}
 /* Banner CSS */
 header p {
     background-color: #F69A19;

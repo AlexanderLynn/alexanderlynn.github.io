@@ -15,7 +15,7 @@ function toggleMenu() {
 }
 
 //JSON Import
-fetch("lesson11/home/town.json")
+fetch("town.json")
   .then(function (response) {
     return response.json();
   })
@@ -48,6 +48,7 @@ fetch("lesson11/home/town.json")
             pop.textContent = "Population: " + towns[i].currentPopulation;
             rain.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
             photo.setAttribute('src', "images/main_photos/" + towns[i].photo);
+            photo.setAttribute('alt', "Photo of " + towns[i].name);
             //Create section in DOM
             section.appendChild(div);
             div.appendChild(name);
