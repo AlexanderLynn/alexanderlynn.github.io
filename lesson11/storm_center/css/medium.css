@@ -1,0 +1,24 @@
+@media only screen and (min-width: 35rem) {
+    nav {
+        margin: 0 auto;
+    }
+    #hero-mobile {
+        display: none;
+    }
+    #hero-image {
+        max-width: 100%;
+        margin: 0;
+        display: block;
+    }
+    article {
+        text-align: center;
+    }
+    #article-image {
+        max-width: 70%;
+    }
+    #thankMessage {
+        text-align: center;
+        padding: 5rem;
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site Home Page</title>
+    <link href="home/css/normalize.css" rel="stylesheet">
+    <link href="home/css/small.css" rel="stylesheet">
+    <link href="home/css/medium.css" rel="stylesheet">
+    <link href="home/css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/lesson11/home/images/weather_logo/weather_logo_Tbv_1.ico" type="image/x-icon">
+</head>
+<body onload="getTime()">
+    <header>
+        <div>
+        <img src="home/images/weather_logo/weather-logo.png" alt="Weather Logo">
+        <section>
+        <h1>Lynn Forecast</h1>
+        <h2>Weather right!</h2>
+        </section>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="menu" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston/preston.html">Preston</a></li>
+            <li><a href="soda_springs/soda_spings.html">Soda Springs</a></li>
+            <li><a href="fish_haven/fish_haven.html">Fish Haven</a></li>
+            <li><a href="storm_center/stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img id="hero-image" src="home/images/hero_images/moose-large.jpg" alt="hero image of moose" sizes="100vw"
+            srcset="home/images/hero_images/moose-small.jpg 400w,
+                    home/images/hero_images/moose-medium.jpg 640w,
+                    home/images/hero_images/moose-large.jpg 1040w">
+      <article id="article">
+          <h2>Beautiful Idaho</h2>
+          <h3>What's not to love?</h3>
+          <img src="/lesson7/images/gallery_images/hill.jpg" alt="rolling idaho hills">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum elit nec hendrerit 
+            efficitur. Nulla facilisi. Morbi rutrum tempus lectus nec pellentesque. Fusce ac ex a eros 
+            consectetur bibendum ut sed nibh. Fusce orci turpis, interdum quis diam ut, gravida ultricies 
+            orci. Sed posuere, velit sed ultricies efficitur, turpis nisl dapibus neque, eget venenatis 
+            augue enim at sem. Mauris ac pretium urna. Suspendisse potenti. Phasellus pharetra rhoncus 
+            tincidunt. Morbi in lacus id neque hendrerit euismod. Etiam at orci et nisl cursus maximus 
+            vel in sapien. Maecenas in nunc ac ipsum pulvinar consectetur. In ac varius odio, sed tempor 
+            odio. Sed sapien augue, sagittis nec sollicitudin non, ultricies in tellus.<br><br>
+            Aliquam ultricies lectus elit, et aliquam enim varius at. Pellentesque pulvinar a eros quis 
+            accumsan. Curabitur nec magna a tortor sollicitudin finibus. Nulla non nibh tristique massa 
+            blandit suscipit a non augue. Praesent odio metus, dapibus quis ornare non, tincidunt et odio. 
+            Cras ut metus hendrerit, venenatis quam nec, sollicitudin ligula. Curabitur tincidunt lectus 
+            id libero porttitor porta. Cras et tellus sed ex fringilla maximus. Mauris nec arcu nec nisi 
+            mattis posuere eu nec turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+            sodales urna quam, accumsan euismod tellus mollis at. Pellentesque in tincidunt mauris. Quisque 
+            quam ipsum, laoreet ac mattis nec, malesuada eget sem.<br><br>
+            Sed non velit id lectus tempor tempus volutpat vel nulla. Morbi bibendum nulla in mauris 
+            venenatis porttitor. Suspendisse ut dapibus tortor, non dictum dolor. Quisque ac euismod 
+            libero, id tincidunt nibh. Curabitur interdum diam ante, ornare vehicula ipsum bibendum quis. 
+            Nunc sit amet feugiat nisi. Aenean ac nunc velit. Vivamus blandit odio et mauris ullamcorper, 
+            eget commodo nisi fringilla. Vestibulum ac molestie diam, at consequat elit. Donec vitae euismod 
+            nunc. Praesent mi metus, commodo eu interdum et, tristique eu elit.<br><br>
+            Curabitur a neque pretium, condimentum justo et, ornare magna. Curabitur tempor leo et eros 
+            consectetur, quis auctor odio rutrum. Nulla facilisi. Sed eget velit eros. Pellentesque tincidunt, 
+            turpis mollis aliquet tristique, nunc leo euismod sem, eu fermentum nibh neque at nisi. Nunc ut 
+            velit eget leo tempus faucibus at ut lorem. Sed vestibulum mi non nibh ultrices sodales. Mauris 
+            tempus, neque et molestie pellentesque, metus ligula ultricies lorem, vitae feugiat turpis sem 
+            vel felis. Donec consectetur lacinia odio, ac aliquam lectus porta ac. Curabitur cursus quam urna, 
+            sed mattis orci semper id. Nulla pharetra lacus quis eros ullamcorper varius. Vivamus id quam 
+            aliquam, laoreet odio vitae, congue dolor. Integer eu faucibus est.</p>
+      </article>
+        <div id="contact">
+            <section>
+            <h2>Contact Information</h2>
+            <h4>📧 Contact@LynnWeather.com</h4>
+            <h4>📞 (801)234-9876</h4>
+            <div>
+                <a target="_blank" href="https://facebook.com"><img
+                src="home/images/media_icons/facebook.png"
+                alt="Facebook icon"/></a>
+                <a target="_blank" href="https://twitter.com"><img
+                src="home/images/media_icons/twitter.png"
+                alt="Twitter icon"/></a>
+                <a target="_blank" href="https://instagram.com"><img
+                src="home/images/media_icons/instagram.png"
+                alt="Instagram icon"/></a>
+            </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>&copy; The Weather Site | <span>Weather Data Courtesy of <a href="https://openweathermap.org/">Open Weather Map</a></span> | Alexander Joshua Lynn</div>
+        <p id="time"></p><br>
+        <a href="/index.html">Course Work Homepage</a>
+        <script src="home/js/siteScripts.js"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

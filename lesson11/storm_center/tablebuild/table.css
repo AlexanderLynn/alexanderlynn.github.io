@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+td, th {
+    border: 1px solid grey;
+    padding: .5rem;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+}
+thead {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+thead, tfoot {
+    background-color: #7fb9c2;
+}
+tfoot {
+    font-weight: 300;
+    font-size: .75rem;
+}
+th {
+    background-color: #628ca6;
+    color:white;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+tbody {
+    background-color: #e7ffed;
+    font-weight: 300;
+}
+tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+#exceeded {
+    background-color: #628ca6;
+    color: white;  
+}

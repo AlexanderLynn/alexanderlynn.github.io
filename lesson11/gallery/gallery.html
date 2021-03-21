@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/lesson7/images/weather_logo/weather_logo_Tbv_1.ico" type="image/x-icon">
+</head>
+<body onload="getTime()">
+    <header>
+        <p id="banner"></p>
+        <div>
+        <img src="/lesson5/images/weather-logo.png" alt="Weather Logo">
+        <section>
+        <h1>Lynn Forecast</h1>
+        <h2>Weather right!</h2>
+        </section>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="menu" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="/lesson5/preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="gallery-grid">
+            <figure>
+                <img src="images/gallery_images/placeholder.jpg" data-src="images/gallery_images/fog.jpg" alt="Image of Pretty Weather Anamoly">
+                <figcaption>A foggy day</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery_images/placeholder.jpg" data-src="images/gallery_images/hill.jpg" alt="Image of Pretty Weather Anamoly">
+                <figcaption>Beautiful summer hill</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery_images/placeholder.jpg" data-src="images/gallery_images/lake.jpg" alt="Image of Pretty Weather Anamoly">
+                <figcaption>Northern Lake</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery_images/placeholder.jpg" data-src="images/gallery_images/lightning.jpg" alt="Image of Pretty Weather Anamoly">
+                <figcaption>Midnight lightning</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery_images/placeholder.jpg" data-src="images/gallery_images/rainbow.jpg" alt="Image of Pretty Weather Anamoly">
+                <figcaption>A noon-day rainbow</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery_images/placeholder.jpg" data-src="images/gallery_images/storm.jpg" alt="Image of Pretty Weather Anamoly">
+                <figcaption>Storm brewing in the distance</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery_images/placeholder.jpg" data-src="images/gallery_images/summer.jpg" alt="Image of Pretty Weather Anamoly">
+                <figcaption>Sunbeams on a summer day</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery_images/placeholder.jpg" data-src="images/gallery_images/sunset.jpg" alt="Image of Pretty Weather Anamoly">
+                <figcaption>Evening sunset</figcaption>
+            </figure>
+            <figure>
+                <img src="images/gallery_images/placeholder.jpg" data-src="images/gallery_images/tornado.jpg" alt="Image of Pretty Weather Anamoly">
+                <figcaption>Tornado season's peak</figcaption>
+            </figure>
+        </div>
+        <div id="contact">
+            <section>
+            <h2>Contact Information</h2>
+            <h4>📧 Contact@LynnWeather.com</h4>
+            <h4>📞 (801)234-9876</h4>
+            <div>
+                <a target="_blank" href="https://facebook.com"><img
+                src="images/media_icons/facebook.png"
+                alt="Facebook icon"/></a>
+                <a target="_blank" href="https://twitter.com"><img
+                src="images/media_icons/twitter.png"
+                alt="Twitter icon"/></a>
+                <a target="_blank" href="https://instagram.com"><img
+                src="images/media_icons/instagram.png"
+                alt="Instagram icon"/></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>&copy; The Weather Site | <span>Weather Data Courtesy of <a href="https://openweathermap.org/">Open Weather Map</a></span> | Alexander Joshua Lynn</div>
+        <p id="time"></p><br>
+        <a href="/index.html">Course Work Homepage</a>
+    </footer>
+    <script src="js/siteScripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/lazyLoader.js"></script>
+</body>
+</html>
