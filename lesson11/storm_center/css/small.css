@@ -139,6 +139,7 @@ form {
     margin-top: 3rem;
     background-color: rgb(5, 75, 166);
     padding: 1rem;
+    border-radius: 8px;
 }
 form fieldset {
     margin: 1rem;
@@ -177,6 +178,7 @@ form label, form div {
 textarea {
     max-width: 535px;
 }
+
 #thankMessage {
     text-align: center;
     padding: 0rem;
