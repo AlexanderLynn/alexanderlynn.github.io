@@ -1,0 +1,125 @@
+/* Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Monda&family=Montserrat:wght@500&family=Palanquin&display=swap');
+h1, h2, h3, h4, h5 {
+font-family: 'Monda', sans-serif;
+}
+p, a, span, div {
+font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+header img {
+    max-width: 168px;
+}
+
+
+/* Navigation */
+nav ul.hide {
+    display: none;
+}
+nav {
+    background-color: #049DBF;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+}
+nav button {
+    display: block;
+    margin: auto;
+    background-color: #049DBF;
+    color: white;
+    border: none;
+    font-size: 3rem;
+}
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+@media only screen and (min-height: 400px) {
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #D99E6A;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+footer hr {
+    border: 0;
+    height: 1px;
+    background-color: black;
+}
+footer img {
+    padding: .5rem;
+    max-width: 40px;
+}
+footer section {
+    text-align: center;
+}
+footer section :nth-child(1) {
+    font-size: 1.5rem;
+}
+footer div {
+    padding-bottom: 1rem;
+}
+footer div a, footer div a:visited {
+    color: black;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Tablet View */
+@media only screen and (min-width: 35rem) {
+    /* Header */
+
+    /* Navigation */
+
+    /* Footer */
+}
+
+
+/* Desktop View */
+@media only screen and (min-width: 72rem) {
+    /* Header */
+
+    /* Navigation */
+    nav button {
+        display: none;
+    }
+    nav ul, nav ul.hide {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+    nav ul li {
+        padding: 1rem 1rem .5rem 1rem;
+    }
+    /* Footer */
+
+}
