@@ -28,8 +28,38 @@
     </nav>
     
     <main id="contact">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97434.55345527745!2d-111.70894802170307!3d40.257313788268824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9271930bf1bf%3A0x1d90f12600b556ef!2sProvo%2C%20UT!5e0!3m2!1sen!2sus!4v1617503441314!5m2!1sen!2sus" 
-        width="375" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email - help@provochamber.org</p>
+            <p>Phone - 801-879-0392</p>
+            <hr>
+        </section>
+        <section>
+            <h2>Board of Directors</h2>
+            <p> Have questions? Leave a mesage below and one of our board of directors will reach out to you!</p>
+            <ul>
+                <li>Steve Rogers</li>
+                <li>Burt Johnson</li>
+                <li>Joseph Woodridge</li>
+                <li>John Jones</li>
+                <li>Yushiba Turnpick</li>
+            </ul>
+            <hr>
+        </section>
+        <div>
+            <form method="get" action="form_response.html">
+                <fieldset>
+                    <legend>Have questions? We'd love to hear from you!</legend>
+                    <label>Name *<input type="text" name="name" pattern="[A-Za-z ]{5,}" title="minimum 5 letters" placeholder="John Doe" required></label>
+                    <label>Phone Number *<input type="tel" name="phone" placeholder="1(877)434-4323" required></label>
+                    <label>Email Address *<input type="email" name="email" placeholder="help@provochamber.org" required></label>
+                    <label>Any Other Pressing Info?<br><textarea></textarea></label>
+                    <input type="submit" value="Leave Feedback" id="submitButton">
+                </fieldset>
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97434.55345527745!2d-111.70894802170307!3d40.257313788268824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9271930bf1bf%3A0x1d90f12600b556ef!2sProvo%2C%20UT!5e0!3m2!1sen!2sus!4v1617503441314!5m2!1sen!2sus" 
+            width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </main>
 
     <footer>

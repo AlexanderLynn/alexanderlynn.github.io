@@ -28,7 +28,47 @@
     </nav>
     
     <main id="join">
-        
+        <h2>Want to join the Provo Chamber?</h2>
+        <p>By joining the Provo Chamberr of Commerce you are opening up your gates to recieving more employees and better 
+            talent! After being accepted a listing will appear on our website and the information will be added to our directory 
+            (for special advertising options please mention the word "special" in the business description).<br>
+            Listing levels included the following features and build upon previous levels:
+        </p>
+        <h3>Non-Profit</h3>
+            <ul><li>Directory listings</li></ul>
+        <h3>Bronze</h3>
+            <ul><li>Everything in the Non-Profit level</li><li>Social media posts and virtual business trainings</li></ul>
+        <h3>Silver</h3>
+        <ul><li>Everything in the Bronze and Non-Profit levels</li><li>Access to our monthly in-person business trainings and tickets to our luncheons</li></ul>
+        <h3>Gold</h3>
+        <ul><li>Everything in the Silver, Bronze, and Non-Profit levels</li><li>Sponsorships and custom advertising options</li></ul>
+
+        <form method="get" action="form_response.html">
+            <fieldset>
+                <legend>Your Contact Info</legend>
+                <label>First Name *<input type="text" name="firstName" pattern="[A-Za-z ]{3,}" placeholder="John" required></label>
+                <label>Last Name  *<input type="text" name="lastName" pattern="[A-Za-z ]{3,}" placeholder="Doe" required></label>
+                <label>Phone Number *<input type="tel" name="phone" placeholder="1(877)434-4323" required></label>
+                <label>Email Address *<input type="email" name="email" placeholder="help@provochamber.org" required></label>
+                <label>Title <input type="text" name="title" placeholder="Mr., Mrs., Dr., etc.."></label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Business Info</legend>
+                <label>Business Name * <input type="text" name="businessName" required></label>
+                <label>Business Address <input type="text" name="businessAddress"></label>
+                <label>Business Website <input type="text" name="businessWebsite"></label>
+                <label>Business Description <input type="text" name="businessDescription"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                    <label class="radioSelector"><input class="radioSelector" type="radio" name="membershipLevel" value="gold">Gold ($1000)</label>
+                    <label class="radioSelector"><input class="radioSelector" type="radio" name="membershipLevel" value="silver">Silver ($400)</label>
+                    <label class="radioSelector"><input class="radioSelector" type="radio" name="membershipLevel" value="bronze">Bronze ($200)</label>
+                    <label class="radioSelector"><input class="radioSelector" type="radio" name="membershipLevel" value="non-profit">Non-Profit ($100)</label>
+                    <br><div>* See key above for information regarding levels</div>
+            </fieldset>
+            <input type="submit" value="Send your Application" id="submitButton">
+        </form>
     </main>
 
     <footer>
