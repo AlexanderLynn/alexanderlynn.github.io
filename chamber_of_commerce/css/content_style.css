@@ -1,19 +1,104 @@
-/* Tablet View */
-@media only screen and (min-width: 35rem) {
-    /* Header */
+/* Home */
+    /* Mobile View */
 
-    /* Navigation */
+    /* Tablet View */
+    @media only screen and (min-width: 42rem) {
 
-    /* Footer */
-}
+    }
 
 
-/* Desktop View */
-@media only screen and (min-width: 72rem) {
-    /* Header */
+    /* Desktop View */
+    @media only screen and (min-width: 72rem) {
 
-    /* Navigation */
+    }
 
-    /* Footer */
+/* City */
+    /* Mobile View */
+    #city {
+        padding: 2rem;
+    }
+    #city h4 {
+        text-align: center;
+    }
+    #city img {
+        max-width: 100%;
+    }
+    #careerAd {
+        background-color: #0468BF;
+        color: white;
+        padding: 1rem;
+        position: fixed;
+        bottom: 4px;
+        right: 4px;
+    }
+    /* Tablet View */
+    @media only screen and (min-width: 42rem) {
+        #city {
+            text-align: center;
+        }
+        #city img {
+            max-width: 600px;
+        }
+        #city section {
+            text-align: center;
+            margin: 2rem;
+        }
+    }
 
-}
+
+    /* Desktop View */
+    @media only screen and (min-width: 72rem) {
+        #city {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+        #city img {
+            max-width: 500px;
+            margin: auto;
+        }
+    }
+
+/* Contact */
+    /* Mobile View */
+    
+    /* Tablet View */
+    @media only screen and (min-width: 42rem) {
+
+    }
+
+
+    /* Desktop View */
+    @media only screen and (min-width: 72rem) {
+
+
+    }
+
+/* Directory */
+    /* Mobile View */
+    
+    /* Tablet View */
+    @media only screen and (min-width: 42rem) {
+
+    }
+
+
+    /* Desktop View */
+    @media only screen and (min-width: 72rem) {
+
+    }
+
+/* Join */
+    /* Mobile View */
+    
+    /* Tablet View */
+    @media only screen and (min-width: 42rem) {
+
+    }
+
+
+    /* Desktop View */
+    @media only screen and (min-width: 72rem) {
+
+
+    }

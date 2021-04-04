@@ -6,7 +6,10 @@ font-family: 'Monda', sans-serif;
 p, a, span, div {
 font-family: 'Montserrat', sans-serif;
 }
-
+main {
+    max-width: 2000px;
+    margin: 0 auto;
+}
 
 /* Header */
 header {
@@ -26,6 +29,8 @@ nav ul.hide {
 }
 nav {
     background-color: #049DBF;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 nav ul {
     padding: 0;
@@ -51,6 +56,9 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+nav a.active {
+    text-decoration: underline;
+}
 @media only screen and (min-height: 400px) {
     .sticky {
         position: -webkit-sticky;
@@ -65,6 +73,9 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
 }
 footer hr {
     border: 0;
