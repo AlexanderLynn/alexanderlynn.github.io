@@ -44,3 +44,10 @@ function loadDirectory() {
         }
     });
 }
+
+function gridView() {
+    document.getElementById("directory").classList.add("grid");
+}
+function listView() {
+    document.getElementById("directory").classList.remove("grid");
+}

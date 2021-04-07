@@ -137,6 +137,10 @@
 /* Directory */
     /* Mobile View */
     #directory {
+        display: flex;
+        flex-flow: column;
+    }
+    #directory.grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 375px));
         justify-content: center;
@@ -144,8 +148,12 @@
     #directory .card {
         display: flex;
         flex-flow: column;
-        margin: 1rem;
+        margin: 1rem auto;
+        min-width: 300px;
         max-width: 375px;
+    }
+    #directory .card h2 {
+        padding: 0 1rem;
     }
     #directory .card img {
         max-width: 150px;
@@ -164,16 +172,31 @@
         text-align: center;
         justify-self: center;
         margin-bottom: 1rem;
-    } 
+    }
+    .buttonContainer {
+        display: none;
+        color: white;
+        background-color: #0468BF;
+        max-width: 6rem;
+        text-align: center;
+        padding-top: 1px;
+        position: absolute;
+        right: 1rem;
+        top: 17rem;
+        z-index: 0;
+    }
+    .viewButton {
+        margin: .5rem;
+    }
     /* Tablet View */
     @media only screen and (min-width: 42rem) {
-
+        .buttonContainer {
+            display: block;
+        }
     }
-
-
     /* Desktop View */
     @media only screen and (min-width: 72rem) {
-        #directory {
+        #directory.grid {
             grid-template-columns: repeat(3, minmax(300px, 375px));
         }
     }
