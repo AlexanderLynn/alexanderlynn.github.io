@@ -1,0 +1,46 @@
+{
+  "business": [
+    {
+      "name": "Zion's Bank",
+      "phone": "888-307-3411",
+      "link": "https://www.zionsbank.com/",
+      "logo": "images/directory/zions.png"
+    },
+    {
+      "name": "Harmons",
+      "phone": "801-225-1770",
+      "link": "https://www.harmonsgrocery.com/",
+      "logo": "images/directory/harmons.png"
+    },
+    {
+      "name": "America First Credit Union",
+      "phone": "800-999-3961",
+      "link": "https://www.americafirst.com/",
+      "logo": "images/directory/america.png"
+    },
+    {
+      "name": "UTA",
+      "phone": "801-743-3882",
+      "link": "https://www.rideuta.com/",
+      "logo": "images/directory/uta.png"
+    },
+    {
+      "name": "A-Core Concrete Cutting",
+      "phone": "855-367-3620",
+      "link": "https://www.a-core.com/",
+      "logo": "images/directory/a-core.png"
+    },
+    {
+      "name": "Vivint",
+      "phone": "855-803-9867",
+      "link": "https://www.vivint.com/",
+      "logo": "images/directory/vivint.png"
+    },
+    {
+      "name": "Intermountain Healthcare",
+      "phone": "800-442-1128",
+      "link": "https://intermountainhealthcare.org/",
+      "logo": "images/directory/intermountain.png"
+    }
+  ]
+}

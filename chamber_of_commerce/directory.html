@@ -10,7 +10,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logos/chamber_logo.png" type="image/x-icon">
 </head>
-<body>
+<body onload="loadDirectory()">
     <header>
         <img src="images/logos/chamber_logo.png" alt="Chamber Logo">
         <h1>Provo Chamber of Commerce</h1>
@@ -26,9 +26,15 @@
             <li><a href="join.html">Join Us</a></li>
         </ul>
     </nav>
-    
+
+    <div>
+        <h3>Change View</h3>
+        <img class="viewButton" src="images/buttons/grid_white.png" onclick="gridView()">
+        <img class="viewButton" src="images/buttons/list_white.png" onclick="listView()">
+    </div>
+
     <main id="directory">
-        
+
     </main>
 
     <footer>
