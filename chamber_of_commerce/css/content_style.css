@@ -182,7 +182,7 @@
     /* Tablet View */
     @media only screen and (min-width: 42rem) {
         #contact iframe {
-            width: 600px;
+            width: 500px;
             height: 350px;
         }
     }

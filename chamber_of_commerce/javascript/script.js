@@ -70,6 +70,9 @@ function weather() {
         document.getElementById("temp").textContent = "Current Tempurature: " + jsObject.current.temp + "  \xB0F";
         document.getElementById("desc").textContent = "Currently: " + jsObject.current.weather[0].description;
         document.getElementById("humidity").textContent = "Humidity: " + jsObject.current.humidity + "%";
+        if (typeof(jsObject.alert) != "undefined"){
+        document.getElementById("alert").textContent = jsObject.alert.sender_name + ": " + jsObject.alert.event;
+        }
         for(i = 0; i < 3; i++) {
             let imagesrc = 'https://openweathermap.org/img/w/' + jsObject.daily[i].weather[0].icon + '.png';
             let desc = jsObject.daily[i].weather[0].description;
