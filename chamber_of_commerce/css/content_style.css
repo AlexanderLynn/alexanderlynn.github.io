@@ -1,3 +1,6 @@
+.hidden {
+    display: none;
+}
 /* Home */
     /* Mobile View */
         #home {
@@ -55,6 +58,13 @@
         }
         #home #business img {
             max-width: 150px;
+        }
+        #home #alert {
+            padding: 1rem;
+            font-size: 1rem;
+            text-align: center;
+            background-color: #0468BF;
+            color: white;
         }
     /* Tablet View */
     @media only screen and (min-width: 42rem) {

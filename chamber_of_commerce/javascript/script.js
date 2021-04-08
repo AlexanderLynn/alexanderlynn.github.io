@@ -7,6 +7,9 @@ window.addEventListener('load', (event) => {
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("hide");
 }
+function hideAlert() {
+    document.getElementById("alert").classList.toggle("hidden");
+}
 
 function loadDirectory() {
     fetch("directory.json")
@@ -72,6 +75,9 @@ function weather() {
         document.getElementById("humidity").textContent = "Humidity: " + jsObject.current.humidity + "%";
         if (typeof(jsObject.alert) != "undefined"){
         document.getElementById("alert").textContent = jsObject.alert.sender_name + ": " + jsObject.alert.event;
+        }
+        else {
+            document.getElementById("alert").textContent = "No current weather alerts. Click to hide."
         }
         for(i = 0; i < 3; i++) {
             let imagesrc = 'https://openweathermap.org/img/w/' + jsObject.daily[i].weather[0].icon + '.png';
