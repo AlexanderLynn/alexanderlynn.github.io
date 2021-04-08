@@ -5,7 +5,7 @@
             text-align: center;
         }
         #home #landing {
-            background-image: url("chamber_of_commerce/images/provo_photos/home/provo-small.jpg");
+            background-image: image("images/provo_photos/home/provo-small.jpg");
             background-size: cover;
             height: 400px;
             position: relative;
@@ -59,7 +59,7 @@
     /* Tablet View */
     @media only screen and (min-width: 42rem) {
         #home #landing {
-            background-image: url("chamber_of_commerce/images/provo_photos/home/byu-small.jpg");
+            background-image: url("images/provo_photos/home/byu-small.jpg");
             background-size: cover;
             height: 600px;
         }
@@ -77,7 +77,7 @@
     /* Desktop View */
     @media only screen and (min-width: 72rem) {
         #home #landing {
-            background-image: url("chamber_of_commerce/images/provo_photos/home/byu-large.jpg");
+            background-image: url("images/provo_photos/home/byu-large.jpg");
             background-size: cover;
         }
     }
