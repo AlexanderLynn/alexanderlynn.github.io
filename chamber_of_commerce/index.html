@@ -10,7 +10,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logos/chamber_logo.png" type="image/x-icon">
 </head>
-<body>
+<body onload="weather()">
     <header>
         <img src="images/logos/chamber_logo.png" alt="Chamber Logo">
         <h1>Provo Chamber of Commerce</h1>
@@ -28,7 +28,68 @@
     </nav>
     
     <main id="home">
-        
+        <section id="landing">
+            <div>
+                <h2>Join the Provo Chamber of Commerce</h2>
+                <p>Having financial security affords you a kind of peace, a sense of fulfillment, and an opportunity 
+                    to help others that is hard to come by. <a href="join.html">Join the Chamber</a> and see you for yourself!</p>
+            </div>
+        </section>
+        <div id="grid">
+            <div>
+                <h2>Why the Provo Chamber of Commerce?</h2>
+                <p class="left">The Provo Chamber of Commerce has existed for over half of a century and has connections to most major companies old a new. The 
+                    employment opportunties with a connection here are fantastic.<br>
+                    Small to large business? We can help too. By becoming a corporate partner with the Chamber you are opening up another front 
+                    for finding the best employees. Talent is often times harder to find; we can help connect. <strong>Our Goals are simple:</strong>
+                </p>
+                <ul>
+                    <li>Help employers find the best talent</li>
+                    <li>Help job seekers find the job opportunities they want</li>
+                    <li>Serve the community</li>
+                </ul>
+            </div>
+            <img src="images/provo_photos/home/town.jpg" alt="provo city">
+            <section>
+                <h2>Upcoming events</h2>
+                <ul>
+                    <li>Provo Leather Emporium Week: May 3rd-8th</li>
+                    <li>Education Week: August 22nd-28th</li>
+                    <li>Chamber Career Fair: September 9th</li>
+                    <li>Christmas Closure: December 24th-25th</li>
+                </ul>
+            </section>
+            <section id="business">
+                <h2>Business Hiring Surges</h2>
+                <img src="images/directory/america.png" alt="america first logo">
+                <h4><a href="https://www.americafirst.com/">America First Credit Union</a></h4>
+                <img src="images/directory/uta.png" alt="UTA logo">
+                <h4><a href="https://www.rideuta.com/">Utah Transit Authority</a></h4>
+                <img src="images/directory/vivint.png" alt="vivint logo">
+                <h4><a href="https://vivint.com">Vivint</a></h4>
+            </section>
+            <section>
+                <h2>Provo Weather</h2>
+                <p id="temp"></p>
+                <p id="desc"></p>
+                <p id="humidity"></p>
+                <div>
+                    <h2>3 Day Forecast</h2>
+                    <table class="five-day">
+                        <tr id="forecastDays">
+                            <th>Wed</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr id="forecast">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>

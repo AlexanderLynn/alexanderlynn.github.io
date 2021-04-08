@@ -14,7 +14,6 @@ function loadDirectory() {
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
         const directory = jsonObject['business'];
         for (let i = 0; i < directory.length; i++ ) {
             //Creating html elements
@@ -50,4 +49,36 @@ function gridView() {
 }
 function listView() {
     document.getElementById("directory").classList.remove("grid");
+}
+
+function weather() {
+    let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+    //Set days in 3-day forecast
+    let dayInForecast = document.getElementById("forecastDays").children;
+    for (i = 0; i < 3; i++) {
+        dayInForecast[i].textContent = days[new Date().getDay() + i];
+    }
+    //OneCall (Weather API)
+    const apiURLOneCall =  "https://api.openweathermap.org/data/2.5/onecall?lat=40.233845&lon=-111.658531&appid=5365d734eac5ba605c1bf24c08670adf&units=imperial";
+
+    fetch(apiURLOneCall)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        let forecastList = document.getElementById("forecast").children;
+        let day = 0;
+        console.log(jsObject);
+        document.getElementById("temp").textContent = "Current Tempurature: " + jsObject.current.temp + "  \xB0F";
+        document.getElementById("desc").textContent = "Currently: " + jsObject.current.weather[0].description;
+        document.getElementById("humidity").textContent = "Humidity: " + jsObject.current.humidity + "%";
+        for(i = 0; i < 3; i++) {
+            let imagesrc = 'https://openweathermap.org/img/w/' + jsObject.daily[i].weather[0].icon + '.png';
+            let desc = jsObject.daily[i].weather[0].description;
+            let img = document.createElement("img");
+            forecastList[day].textContent = jsObject.daily[i].temp.day.toFixed(0) + "\xB0F";
+            forecastList[day].appendChild(img);
+            img.setAttribute('src', imagesrc);
+            img.setAttribute('alt', desc); 
+            day++;
+        }
+    });
 }

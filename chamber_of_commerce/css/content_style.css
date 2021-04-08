@@ -1,15 +1,85 @@
 /* Home */
     /* Mobile View */
-
+        #home {
+            padding: 1rem;
+            text-align: center;
+        }
+        #home #landing {
+            background-image: url("/images/provo_photos/home/provo-small.jpg");
+            background-size: cover;
+            height: 400px;
+            position: relative;
+            margin: 0 auto;
+        }
+        #home #landing div {
+            position: absolute;
+            bottom: 1rem;
+            padding: 1rem;
+            background-color: rgba(211,211,211, .7)
+        }
+        #home #grid {
+            display: flex;
+            flex-flow: column;
+            padding: 1rem;
+            max-width: 1800px;
+        }
+        #home img {
+            max-width: 100%;
+            border-radius: 3px;
+        }
+        #home a {
+            color: black;
+            font-size: 1.25rem;
+        }
+        #home ul {
+            text-align: left;
+            padding: 1rem;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        #home .left {
+            text-align: left;
+        }
+        #home table {
+            margin: 0 auto;
+        }
+        #home table, #home tr, #home td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+        #home td img{
+            display: flex;
+            flex-flow: column;
+        }
+        #home #business img {
+            max-width: 150px;
+        }
     /* Tablet View */
     @media only screen and (min-width: 42rem) {
-
+        #home #landing {
+            background-image: url("/images/provo_photos/home/byu-small.jpg");
+            background-size: cover;
+            height: 600px;
+        }
+        #home #grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            align-items: center;
+            justify-items: center;
+        }
+        #home #business {
+            grid-row: 1 / 3;
+        }
     }
-
-
     /* Desktop View */
     @media only screen and (min-width: 72rem) {
-
+        #home #landing {
+            background-image: url("/images/provo_photos/home/byu-large.jpg");
+            background-size: cover;
+        }
     }
 
 /* City */
@@ -97,7 +167,6 @@
     }
     #contact input {
         margin-left: .5rem;
-        margin-bottom: 5.rem;
     }
     #contact textarea {
         width: 90%;
@@ -177,6 +246,7 @@
         display: none;
         color: white;
         background-color: #0468BF;
+        border-radius: 3px;
         max-width: 6rem;
         text-align: center;
         padding-top: 1px;
